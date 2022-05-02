@@ -10,6 +10,11 @@ class Golondrina:
 
   def volar(self, kms):
     self.energia -= 10 + kms
+  def estaeneq(self):
+    return (self.energia>=150 and self.energia>=300)
+
+
+
 
 class Dragon:     
   def __init__(self, cantidad_dientes, energia):
@@ -27,7 +32,7 @@ class Dragon:
 
   def volar(self, kms):
     self.energia -= 10 + kms/10
-
+  
 pepita = Golondrina(100)
 anastasia = Golondrina(200)
 roberta = Dragon(10, 1000)

@@ -55,3 +55,4 @@ print(roberta.energia)
 #SELF: representa a un objeto dado
 print(roberta.comer_peces(200))
 print(roberta.energia)
+print(pepita.energia)

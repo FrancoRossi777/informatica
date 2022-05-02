@@ -1,8 +1,9 @@
 #15
 import re
+
 def esmailvalido(mail):
-    if re.match("^[(a-z0-9\_\-\.)]+@[(a-z0-9\_\-\.)]+\.[(a-z)]{2,15}$", mail.lower()):
-        print("Correo Incorrecto")
+    if re.findall('[\W]+[-_\.]*[\W]+@[a-z]{1-9}\.[a-z]{2-4}', mail):
+        print('correo correcto')
     else:
-        print("Correo Correcto") 
-print(esmailvalido(f.rossi.1102@gmail.com))   
+        print('correo incorrecto')
+print(esmailvalido('hola@gmail.com'))
